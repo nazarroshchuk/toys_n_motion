@@ -1,0 +1,22 @@
+@import 'mixin';
+@import 'valuable';
+
+.footer {
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+    margin-top: 41px;
+    background-color: $colorBlue;
+    .footer__text {
+        @include fontMyriad;
+        font-size: 16px;
+        line-height: 24px;
+        p {
+            margin: 16px 0;
+        }
+        .col-6:last-child {
+            text-align: end;
+        }
+    }
+}

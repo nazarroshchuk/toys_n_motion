@@ -1,0 +1,51 @@
+@import 'mixin';
+@import 'valuable';
+
+.contacts.container {
+    padding: 18px 15px;
+    .contacts__logo {
+        padding-right: 5px;
+    }
+    .contacts__item {
+        @include flex;
+        justify-content: start;
+        align-items: center;
+        @include fontMyriad;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+        .contacts__item + .contacts__item {
+            padding: 0;
+            padding-left: 5px;
+        }
+        .item-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $colorYellow;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 5px;
+        }
+        .fa-envelope,
+        .fa-phone-alt,
+        .fa-map-marker-alt {
+            color: #fff;
+        }
+        .contacts__item-descr {
+            padding-left: 10px;
+        }
+        .item-name a {
+            font-size: 14px;
+            color: #818181;
+            text-decoration: none;
+            &:hover {
+                color: red;
+                text-decoration: underline;
+            }
+        }
+        .item-adres {
+           font-size: 18px;
+        }
+    }
+}

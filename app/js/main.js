@@ -1,0 +1,2 @@
+$('#carouselDiscountsIndicators').carousel();
+$('#carouselViews').carousel();

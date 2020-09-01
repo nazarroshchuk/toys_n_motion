@@ -1,0 +1,53 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+@import 'mixin';
+@import 'header';
+@import 'valuable';
+@import 'discounts';
+@import 'about-us';
+@import 'popular';
+@import 'reviews';
+@import 'map';
+@import 'contacts';
+@import 'footer';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+body {
+    background-color: #f1f6fa;
+    color: #fff;
+    font-family: 'Baloo 2', cursive;
+    font-size: 16px;
+}
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 605px) {
+    .header__menu .header__menu-nav {
+        flex-direction: column;
+        li + li {
+            margin: 0;
+        }
+    }
+    .header__banner-big .title h1 {
+        font-size: 30px;
+    }
+    .header__advantages-items .row {
+        flex-direction: column;
+        align-items: start;
+    }
+    .discount__slider-arrows {
+        padding: 70px;
+    }
+    .discounts__propose .discounts__propose-item h3 {
+        font-size: 16px;
+    }
+}

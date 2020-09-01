@@ -1,0 +1,34 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin fontMyriad {
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin titleSection {
+    margin: 0;
+    font-size: 56px;
+    line-height: 37px;
+    color: #000;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+@mixin btnCard {
+    background: none;
+    border: 2px solid $colorGreen;
+    border-radius: 21px;
+    padding: 10px 30px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+@mixin btnSpan {
+    background: url(../images/supermarket-btn.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    padding: 0px 10px 0px 20px;
+}

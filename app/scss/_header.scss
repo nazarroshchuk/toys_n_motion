@@ -1,0 +1,239 @@
+@import 'mixin';
+@import 'valuable';
+header {
+    .header__top {
+        padding-top: 25px;
+        .header__top-search-panel {
+            text-align: end;
+            padding-left: 170px;
+            padding-right: 0;
+        }
+        &-search {
+            font-family: 'Baloo 2', cursive;
+            @include flex;
+            flex-wrap: nowrap;
+            justify-content: end;
+            .custom-select {
+                max-width: 150px;
+                border-radius: 20px 0px 0px 20px;
+                margin-right: -1px;
+                background-color: $colorGreen;
+                color: #fff;
+                appearance: none;       /* Remove default arrow */
+                background-image: url(../images/select-arrow.png);
+                background-size: 10%;
+                border: 1px solid $colorGreen;
+                font-size: 16px;
+            }
+            .form-control {
+                max-width: 402px;
+                border-radius: 0;
+                border: 1px solid #fff;
+                font-size: 16px;
+            }
+            button {
+                border: 1px solid #fff;
+                margin-left: -1px;
+                width: 50px;
+                border-left: none;
+                border-radius: 0px 20px 20px 0;
+                background: url(../images/search-interface-symbol.png) no-repeat 50% 50%, #fff;;
+            }
+        }
+    }
+}
+
+.header {
+
+    // .header__menu
+
+    &__menu {
+        .container-fluid {
+            margin-top: 30px;
+            background-color: $colorBlue;
+        }
+        .container {
+            @include flex;
+            align-items: center;
+        }
+    }
+
+    // .header__menu-nav
+
+    &__menu-nav {
+        text-align: center;
+        font-family: 'Baloo 2', cursive;
+        &.nav a {
+            width: 97px;
+            color: #fff;
+            font-size: 18px;
+            padding: 14px;
+        }
+        &.nav li + li {
+            margin-left: 50px;
+        }
+        &.nav a:hover {
+            background-color: $colorGreen;
+            transition: all .5s;
+        }
+    }
+
+    // .header__menu-basket
+
+    &__menu-basket {
+        @include flex;
+        max-width: 110px;
+        align-items: center;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Baloo 2', cursive;
+        .basket-img {
+            cursor: pointer;
+            margin-right: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $colorYellow;
+            background: url(../images/supermarket.png) no-repeat center, $colorYellow;
+        }
+    }
+}
+
+.header {
+
+    // .header__banner
+
+    &__banner {
+        padding-top: 40px;
+        .container {
+            @include flex;
+        }
+    }
+
+    // .header__banner-big
+
+    &__banner-big {
+        // max-width: 732px;
+        height: 482px !important;
+        background-color: $colorBlueLight;
+        background-image: url(../images/mario.png);
+        border-radius: 10px;
+        .prise {
+            text-align: center;
+            margin: 86px 0px 0px 16px;
+            padding: 0;
+            width: 167px;
+            
+        }
+        .prise .color {
+            font-size: 72px;
+            background-color: #ff250d;
+            border-radius: 35.7px;
+            font-weight: 700;
+            height: 75px;
+            line-height: 84px;
+        }
+        .prise .crossed {
+            text-decoration: line-through red;
+            font-size: 58px;
+            font-weight: 700;
+        }
+        .title {
+            text-align: center;
+            margin: 51px 0px 0px 16px; 
+        }
+        .title h1 {
+            font-size: 60px;
+            background-color: $colorGreen;
+            max-width: 409px;
+            height: 62px;
+            border-radius: 31px;
+            line-height: 70px;
+        }
+        .title h1 + h1 {
+            max-width: 494px;
+        }
+    }
+
+    &__banner-small-item {
+        border-radius: 10px;
+        background: url(../images/barby.png) no-repeat 95% -8%, $colorPink;
+        .title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            max-width: 250px;
+            line-height: 42px;
+            padding: 67px 0px 0px 37px;
+        }
+        .link {
+            display: inline-block;
+            padding: 6px 0px 40px 37px;
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+    &__banner-small-item.car {
+        background: url(../images/car.png) no-repeat 175% 630%, $colorGreen;
+    }
+}
+.banner-small-item-cont {
+    padding-bottom: 100px;
+}
+
+.header {
+
+  
+    .header__advantages.container {
+        margin-top: 40px;
+        padding: 15px; 
+    }
+    &__advantages-items {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-top: 40px;
+           padding: 15px; 
+    }
+
+    // .header__advantages-item
+
+    &__advantages-item {
+        color: #000;
+        .advantages-item-descr.bord-none {
+            border:none;
+        }
+        .item-img {
+            padding-top: 5px;
+        }
+        .advantages-item-descr {
+            padding-left:10px;
+            .item-title {
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+            }
+            .item-descr {
+
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 32px;
+            }
+        }
+    }
+    &__advantages-divide {
+        display: inline-block;
+        background: url(../images/advantages-divide.png) no-repeat 50% 50%;
+        height: 50px;
+        padding-left: 25px;
+        width: 1px;
+    }
+}
+
+
+
+
+
+
+
+

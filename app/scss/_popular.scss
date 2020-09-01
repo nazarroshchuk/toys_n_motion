@@ -1,0 +1,54 @@
+@import 'mixin';
+@import 'valuable';
+
+
+.popular.container {
+    padding-top: 100px; 
+}
+.popular__galery-title h2{
+    @include titleSection;
+    margin-bottom: 20px;
+}
+
+.popular__galery-items {
+    padding-top: 50px !important;
+    @include flex;
+    box-sizing: border-box;
+   
+}
+.popular__galery-card {
+   @include flex;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 13px;
+    .card-image {
+        padding: 0;
+    }
+    .card-descr {
+        padding: 15px;
+        @include fontMyriad;
+        color: #000;
+        font-size: 18px;
+        line-height: 18px;
+        .card-title {
+            padding-top: 15px;
+        }
+        .card-price {
+            padding-top:20px;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 19px;
+        }
+    }
+    .card-btn {
+        @include btnCard;
+        margin: 20px 0 20px;
+        display: inline-block;
+        max-width: 210px;
+        height: 42px;
+        text-align: center;
+        span {
+            @include btnSpan;
+        }
+    }
+}
